@@ -26,7 +26,7 @@ server.get('/pookdata',(req,res )=>{
     res.send(selectdata);
 })
 
-/////////////////////////////////////////////
+///////////////////////////////////////////////
 
 server.get('/',(req,res)=>{
     res.status(200).send('home routs')
