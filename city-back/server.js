@@ -5,8 +5,8 @@ const pookdata=require('./assits/Pokemon.json');
 console.log(pookdata)
 /////////server has all properities and method of express//////////
 const server=express();
-
-const PORT=3002;
+require('dotenv').config();
+const PORT=process.env.PORT||3033;
 server.get('/test',(req,res)=>{
     res.status(200).send('its WORK')
 })
